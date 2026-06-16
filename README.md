@@ -73,6 +73,7 @@ SLACK_APP_TOKEN=xapp-your-own-custom-app-token
 (Save and exit via Ctrl + O, Enter, then Ctrl + X)
 
 4. Running the App
+   
 Method A: Manual Foreground Execution (Development Testing)
 
 To spin up the WebSocket listening pipe manually inside your current active terminal panel process shell, run:
@@ -107,21 +108,29 @@ Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
+
 Execute these systemd controller flags to refresh the configuration cache on disk and force start your global service daemon:
 
 Bash
 ## Force systemd to cache your new configuration
+
 systemctl daemon-reload
 
 ## Reset any historic failure loop timeouts
+
 systemctl reset-failed talentbot.service
 
 ## Launch the daemon process instantly and enable boot persistence
+
 systemctl enable --now talentbot.service
 
 ## Verify the live background execution loop state
+
 systemctl status talentbot.service
+
+
 # 🤝 Credits & Acknowledgments
+
 This production application was ideated, coded, debugged, and successfully shipped with vital help from these incredible resources:
 
 Hack Club: Massive thanks to the Hack Club community for providing the underlying inspiration, access to core infrastructure server environments, and for maintaining an engineering culture that pushes makers to continuously build and ship open-source software. 🛠️🦖
