@@ -30,27 +30,8 @@ TalentCruiter handles full CRUD (Create, Read, Update, Delete) transactional ope
 /talent-help – Bring up the comprehensive manual guide on proper syntax parameters and inline operational usage.
 
 # 🏗️ Technical Architecture & Stack
-To keep the system lightweight yet highly robust, the codebase leverages a cleanly decoupled three-layer modern system architecture:
+To keep the system lightweight yet highly robust, the codebase leverages a cleanly decoupled three-layer modern system architecture
 
-┌────────────────────────────────────────────────────────┐
-│                   Slack Workspace UI                   │
-└───────────────────────────┬────────────────────────────┘
-                            │
-               WebSocket Connection (Socket Mode)
-                            │
-                            ▼
-┌────────────────────────────────────────────────────────┐
-│           Node.js Bolt SDK Logic Engine                │
-│    (Handles authorization, parses args, maps CRUD)      │
-└───────────────────────────┬────────────────────────────┘
-                            │
-               Synchronous Disk Transactions
-                            │
-                            ▼
-┌────────────────────────────────────────────────────────┐
-│             SQLite Relational Database                 │
-│         (Self-contained single binary file)            │
-└────────────────────────────────────────────────────────┘
 Runtime Engine: Node.js
 
 Framework Architecture: Slack Bolt SDK (JavaScript)
