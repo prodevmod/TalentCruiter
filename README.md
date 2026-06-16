@@ -1,6 +1,11 @@
 
 ## TalentCruiter 🚀
 Basically it is a Slack native app that is designed for recruiters and people who try to network between them and find individuals with certain skills to be able to communicate better and link up quicker than using dozens of apps like LinkedIn, WhatsApp Messenger, and while also being in their the electronic workplace. It's an innovative idea that saves time and helps anyone operate more efficiently.
+<img width="499" height="183" alt="image" src="https://github.com/user-attachments/assets/c9fe0952-8543-4b2a-b943-0f4b4dff3128" />
+
+<img width="753" height="280" alt="image" src="https://github.com/user-attachments/assets/fecd225e-494c-4dac-a5a3-bafba1d57fc6" />
+<img width="774" height="152" alt="image" src="https://github.com/user-attachments/assets/f5a67597-3d13-40d2-b813-85c5edf7df13" />
+
 
 ## Background
 Well basically a close relative of mine works as a manager in a company and another very close friend of mine works as an HR agent for a big multinational company. Both people have the same problem: they find it overwhelming to get a grasp of different people from dozens of different apps. This is due to these apps being unfamiliar to them as their work space is heavily based on Slack and maybe some other app.While the idea didn't come to me at first, after a week of brainstorming to make something innovative and efficient and helpful that would be simple enough for me as a beginner to comprehend, it struck me.I got into work and after a week of brainstorming, one hour of coding, half an hour of debugging, and another one and a half hours of optimizing my readme and presentation, here we are. 
