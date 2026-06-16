@@ -1,0 +1,1 @@
+TalentCruiter is a Slack workspace assistant built with Slack Bolt and SQLite. Users can add, view, remove, search, and manage skills through slash commands, making it easy to find teammates with specific expertise.
