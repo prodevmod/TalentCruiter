@@ -61,9 +61,10 @@ Bash
 nano .env
 Paste in your private integration API hash credentials:
 
-Απόσπασμα κώδικα
 SLACK_BOT_TOKEN=xoxb-your-own-custom-bot-token
+
 SLACK_APP_TOKEN=xapp-your-own-custom-app-token
+
 (Save and exit via Ctrl + O, Enter, then Ctrl + X)
 
 4. Running the App
