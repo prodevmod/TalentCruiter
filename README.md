@@ -46,18 +46,23 @@ Process Supervisor: Systemd Daemon Service. Operates as a global background serv
 Follow these sequential steps to establish a clone configuration on your local development machine or production environment.
 
 1. Clone the Repository
-Bash
+
 git clone https://github.com/prodevmod/TalentCruiter.git
+
 cd TalentCruiter
+
 2. Install Dependencies
+
 Because native modules compile bindings through node-gyp on target environments, utilize the specialized permission and binding flags during setup:
 
-Bash
-npm install --no-bin-links --unsafe-perm
-3. Configure Environment Variables
-Create a localized environment configuration structure file named .env straight inside your root path directory:
 
-Bash
+npm install --no-bin-links --unsafe-perm
+
+3. Configure Environment Variables
+
+5. Create a localized environment configuration structure file named .env straight inside your root path directory:
+
+
 nano .env
 Paste in your private integration API hash credentials:
 
@@ -69,19 +74,23 @@ SLACK_APP_TOKEN=xapp-your-own-custom-app-token
 
 4. Running the App
 Method A: Manual Foreground Execution (Development Testing)
+
 To spin up the WebSocket listening pipe manually inside your current active terminal panel process shell, run:
 
-Bash
+
 node index.js
+
 Note: Closing your terminal window or dropping your active connection session will terminate the app.
 
 Method B: Production Background Service (24/7 Server Deployment via systemd)
+
 To ensure the app detaches safely into the background and survives operating system reboots or unhandled application logic exceptions, deploy a persistent Linux systemd engine profile.
 
 Create a root service definition configuration block file:
 
-Bash
+
 nano /etc/systemd/system/talentbot.service
+
 Paste the following clean execution configuration. Make sure to accurately match the path to your server's home directory (e.g., /root/TalentCruiter):
 
 Ini, TOML
